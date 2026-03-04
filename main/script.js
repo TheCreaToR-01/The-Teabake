@@ -38,7 +38,7 @@ const PRODUCTS = [
     { id: 'vi6', cat: 'viennoiserie', catLabel: 'Viennoiserie', name: 'Cream Cheese Garlic Buns', desc: 'Pillowy buns infused with aromatic garlic cream cheese, dipped in parsley butter and cream, baked to golden perfection. Savory, rich, and utterly irresistible.', prices: [{ label: 'Per Piece', val: '₹275' }], emoji: '🧄', img: 'https://images.unsplash.com/photo-1549931319-a545dcf3bc7c?w=600&q=80' },
 
     // TARTS & MOUSSE
-    { id: 'tm1', cat: 'tarts-mousse', catLabel: 'Tarts, Tub Cakes & Mousse', name: 'Lemon Tart', desc: 'Crisp buttery tart shell filled with silky lemon custard. Bright, zesty, balanced with a smooth mascarpone cream. A study in perfect contrasts.', prices: [{ label: 'Per Piece', val: '₹250' }], emoji: '🍋', img: './assets/Lemon-tart.jpeg' },
+    { id: 'tm1', cat: 'tarts-mousse', catLabel: 'Tarts, Tub Cakes & Mousse', name: 'Lemon Tart', desc: 'Crisp buttery tart shell filled with silky lemon custard. Bright, zesty, balanced with a smooth mascarpone cream. A study in perfect contrasts.', prices: [{ label: 'Per Piece', val: '₹250' }], emoji: '🍋', img: 'main/assets/Lemon-tart.jpeg' },
     { id: 'tm2', cat: 'tarts-mousse', catLabel: 'Tarts, Tub Cakes & Mousse', name: 'Fresh Fruit Tart', desc: 'Smooth vanilla custard crowned with an elegant selection of seasonal fresh fruits. Colourful, delicate, and as beautiful as it is delicious.', prices: [{ label: 'Per Piece', val: '₹250' }], emoji: '🍓', img: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&q=80' },
     { id: 'tm3', cat: 'tarts-mousse', catLabel: 'Tarts, Tub Cakes & Mousse', name: 'Banoffee Pie', desc: 'Buttery biscuit base layered with rich caramel, fresh banana and light whipped cream. A British classic that never fails to delight.', prices: [{ label: 'Per Piece', val: '₹250' }], emoji: '🍌', img: 'https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=600&q=80' },
     { id: 'tm4', cat: 'tarts-mousse', catLabel: 'Tarts, Tub Cakes & Mousse', name: 'Tiramisu', desc: 'Home-baked sponge soaked in espresso, layered with rich mascarpone cream, dusted with the finest cocoa powder. An Italian classic made with soul.', prices: [{ label: 'Per Piece', val: '₹350' }], emoji: '☕', img: 'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=600&q=80' },
@@ -327,4 +327,5 @@ renderProducts('tea-cakes');
 renderReviews();
 renderFaqs();
 bindCursor();
+
 initReveal();
