@@ -58,7 +58,7 @@ const PRODUCTS = [
     { id: 'sc9', cat: 'signature-cakes', catLabel: 'Signature Cakes', name: 'Classic Vanilla Bean Cake', desc: 'Pure, unadulterated vanilla — a real vanilla bean sponge with vanilla Chantilly cream. Effortlessly elegant and endlessly pleasing. The one cake everyone comes back to.', prices: [{ label: 'Serves 6', val: '₹1,499' }, { label: 'Serves 10–12', val: '₹2,499' }], emoji: '🍦', img: 'https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=600&q=80' },
     { id: 'sc10', cat: 'signature-cakes', catLabel: 'Signature Cakes', name: 'Trifle Tub', desc: 'Layers of soft sponge, fresh fruit, silky custard and luscious whipped cream. Delicately assembled for a dessert that is vibrant and creamy. Perfect for sharing.', prices: [{ label: 'Serves 6', val: '₹1,800' }, { label: 'Serves 10–12', val: '₹3,000' }], emoji: '🍮', img: 'https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=600&q=80' },
     { id: 'sc11', cat: 'signature-cakes', catLabel: 'Signature Cakes', name: 'Tiramisu Tub', desc: 'Home-baked sponge soaked in espresso, layered with rich mascarpone cream, dusted with finest cocoa powder. The Italian classic in a generous, shareable tub.', prices: [{ label: 'Serves 6', val: '₹1,800' }, { label: 'Serves 10–12', val: '₹3,000' }], emoji: '☕', img: 'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=600&q=80' },
-    { id: 'sc12', cat: 'signature-cakes', catLabel: 'Signature Cakes', name: 'Tres Leches Tub', desc: 'Light vanilla sponge soaked in a blend of three milks, finished with a cloud of whipped cream, pistachios and rose petals. Moist, delicate and beautifully indulgent — to share.', prices: [{ label: 'Serves 6', val: '₹1,800' }, { label: 'Serves 10–12', val: '₹3,000' }], emoji: '🌹', img: 'assets/Tres-leches-tub.jpeg' },
+    { id: 'sc12', cat: 'signature-cakes', catLabel: 'Signature Cakes', name: 'Tres Leches Tub', desc: 'Light vanilla sponge soaked in a blend of three milks, finished with a cloud of whipped cream, pistachios and rose petals. Moist, delicate and beautifully indulgent — to share.', prices: [{ label: 'Serves 6', val: '₹1,800' }, { label: 'Serves 10–12', val: '₹3,000' }], emoji: '🌹', img: 'main/assets/Tres-leches-tub.jpeg' },
 ];
 const TESTIMONIALS = [
     { name: 'Priya Sharma', location: 'South Delhi', text: 'The sourdough is hands-down the best I\'ve had in Delhi. That crust, that chew — it\'s what weekends are made for. Rashmi really knows her craft.', stars: 5 },
@@ -329,5 +329,6 @@ renderFaqs();
 bindCursor();
 
 initReveal();
+
 
 
