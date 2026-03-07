@@ -42,7 +42,7 @@ const PRODUCTS = [
     { id: 'tm2', cat: 'tarts-mousse', catLabel: 'Tarts, Tub Cakes & Mousse', name: 'Fresh Fruit Tart', desc: 'Smooth vanilla custard crowned with an elegant selection of seasonal fresh fruits. Colourful, delicate, and as beautiful as it is delicious.', prices: [{ label: 'Per Piece', val: '₹250' }], emoji: '🍓', img: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&q=80' },
     { id: 'tm3', cat: 'tarts-mousse', catLabel: 'Tarts, Tub Cakes & Mousse', name: 'Banoffee Pie', desc: 'Buttery biscuit base layered with rich caramel, fresh banana and light whipped cream. A British classic that never fails to delight.', prices: [{ label: 'Per Piece', val: '₹250' }], emoji: '🍌', img: 'https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=600&q=80' },
     { id: 'tm4', cat: 'tarts-mousse', catLabel: 'Tarts, Tub Cakes & Mousse', name: 'Tiramisu', desc: 'Home-baked sponge soaked in espresso, layered with rich mascarpone cream, dusted with the finest cocoa powder. An Italian classic made with soul.', prices: [{ label: 'Per Piece', val: '₹350' }], emoji: '☕', img: 'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=600&q=80' },
-    { id: 'tm5', cat: 'tarts-mousse', catLabel: 'Tarts, Tub Cakes & Mousse', name: 'Tres Leches', desc: 'Light vanilla sponge soaked in a blend of three milks, finished with a cloud of whipped cream, dusted with finely chopped pistachios and rose petals. Moist, delicate and beautifully indulgent.', prices: [{ label: 'Per Piece', val: '₹350' }], emoji: '🌹', img: 'main/assets/Tres-leches-tub.jpeg' },
+    { id: 'tm5', cat: 'tarts-mousse', catLabel: 'Tarts, Tub Cakes & Mousse', name: 'Tres Leches', desc: 'Light vanilla sponge soaked in a blend of three milks, finished with a cloud of whipped cream, dusted with finely chopped pistachios and rose petals. Moist, delicate and beautifully indulgent.', prices: [{ label: 'Per Piece', val: '₹350' }], emoji: '🌹', img: 'main/assets/Tres-leches.jpeg' },
     { id: 'tm6', cat: 'tarts-mousse', catLabel: 'Tarts, Tub Cakes & Mousse', name: 'Trifle', desc: 'Layers of soft sponge, fresh fruit, silky custard and luscious whipped cream. Delicately assembled for a dessert that is vibrant and creamy in every spoonful.', prices: [{ label: 'Per Piece', val: '₹350' }], emoji: '🍮', img: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&q=80' },
     { id: 'tm7', cat: 'tarts-mousse', catLabel: 'Tarts, Tub Cakes & Mousse', name: 'Belgian Chocolate Mousse', desc: 'Silky, airy mousse crafted with fine Belgian chocolate with a dollop of rich French cream. Pure, unapologetic chocolate indulgence.', prices: [{ label: 'Per Piece', val: '₹250' }], emoji: '🍫', img: 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=600&q=80' },
 
@@ -329,4 +329,5 @@ renderFaqs();
 bindCursor();
 
 initReveal();
+
 
