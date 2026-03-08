@@ -752,7 +752,7 @@ nav.scrolled {
 .modal-desc {
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
-    font-size: 1.02rem;
+    font-size: 1.1rem;
     color: var(--muted);
     line-height: 1.7
 }
@@ -774,7 +774,7 @@ nav.scrolled {
 
 .mprice-val {
     font-family: 'DM Serif Display', serif;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     color: var(--teal);
     display: block;
     line-height: 1
@@ -2247,4 +2247,5 @@ footer {
     }
 
 }
+
 
