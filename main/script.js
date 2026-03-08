@@ -30,8 +30,8 @@ const PRODUCTS = [
     { id: 'sb3', cat: 'specialty-breads', catLabel: 'Specialty Breads', name: 'Babka', desc: 'Rich, buttery braided loaf swirled generously with dark chocolate ganache or cinnamon sugar filling. Sheer indulgence in every slice.', prices: [{ label: 'Loaf', val: '₹300' }], emoji: '🍫', img: 'https://images.unsplash.com/photo-1624535517268-2b48f6c70087?w=600&q=80' },
 
     // VIENNOISERIE
-    { id: 'vi1', cat: 'viennoiserie', catLabel: 'Viennoiserie', name: 'Croissant', desc: 'Buttery, flaky and perfectly layered with a crisp golden crust and a soft, honeycombed interior. Made with the finest French butter, folded with patience and precision.', prices: [{ label: 'Per Piece', val: '₹220' }], emoji: '🥐', img: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600&q=80' },
-    { id: 'vi2', cat: 'viennoiserie', catLabel: 'Viennoiserie', name: 'Pain au Chocolat', desc: 'Delicate, buttery layers wrapped around rich dark chocolate batons. Crisp on the outside, tender within — a perfectly balanced classic French indulgence.', prices: [{ label: 'Per Piece', val: '₹245' }], emoji: '🍫', img: 'https://images.unsplash.com/photo-1608198093002-ad4e005484ec?w=600&q=80' },
+    { id: 'vi1', cat: 'viennoiserie', catLabel: 'Viennoiserie', name: 'Croissant', desc: 'Buttery, flaky and perfectly layered with a crisp golden crust and a soft, honeycombed interior. Made with the finest French butter, folded with patience and precision.', prices: [{ label: 'Per Piece', val: '₹220' }], emoji: '🥐', img: 'main/assets/croisssant.jpeg' },
+    { id: 'vi2', cat: 'viennoiserie', catLabel: 'Viennoiserie', name: 'Pain au Chocolat', desc: 'Delicate, buttery layers wrapped around rich dark chocolate batons. Crisp on the outside, tender within — a perfectly balanced classic French indulgence.', prices: [{ label: 'Per Piece', val: '₹245' }], emoji: '🍫', img: 'main/assets/pain-au-chocolate.jpeg' },
     { id: 'vi3', cat: 'viennoiserie', catLabel: 'Viennoiserie', name: 'Cinnamon Roll', desc: 'Soft, buttery swirls layered with warm cinnamon sugar, baked until golden and finished with a delicate glaze. Cosy, fragrant, and deeply comforting.', prices: [{ label: 'Per Piece', val: '₹200' }], emoji: '🌀', img: 'main/assets/Cinnamon-Roll.jpg' },
     { id: 'vi4', cat: 'viennoiserie', catLabel: 'Viennoiserie', name: 'Maritozzo', desc: 'Soft, lightly sweetened brioche bun generously filled with airy whipped cream. Pillowy, delicate and irresistibly indulgent — a Roman breakfast classic.', prices: [{ label: 'Per Piece', val: '₹250' }], emoji: '🍰', img: 'https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=600&q=80' },
     { id: 'vi5', cat: 'viennoiserie', catLabel: 'Viennoiserie', name: 'Bagel', desc: 'Hand-rolled and gently boiled before baking for its signature satisfying chew. Dense, chewy, golden — the real thing.', prices: [{ label: 'Per Piece', val: '₹160' }], emoji: '🥯', img: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&q=80' },
@@ -329,6 +329,7 @@ renderFaqs();
 bindCursor();
 
 initReveal();
+
 
 
 
