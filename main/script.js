@@ -103,15 +103,15 @@ const FAQS = [
         ]
     },
     {
-        q: 'Do you offer eggless options?',
+        q: 'Do you offer eggless/vegan options?',
         a: [
-            'Yes. Our menu largely includes thoughtfully developed eggless selections across multiple categories.'
+            'Yes. Our menu largely includes thoughtfully developed eggless/vegan selections across multiple categories.'
         ]
     },
     {
-        q: 'Do you offer vegan options?',
+        q: 'Is pick-up available?',
         a: [
-            'Yes. We curate a refined vegan menu, designed without dairy or eggs while preserving depth of flavour and texture. Availability may vary by category.'
+            'Yes, orders can be picked up from the kitchen.'
         ]
     },
     {
@@ -329,6 +329,7 @@ renderFaqs();
 bindCursor();
 
 initReveal();
+
 
 
 
