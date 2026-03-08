@@ -31,7 +31,7 @@ const PRODUCTS = [
 
     // VIENNOISERIE
     { id: 'vi1', cat: 'viennoiserie', catLabel: 'Viennoiserie', name: 'Croissant', desc: 'Buttery, flaky and perfectly layered with a crisp golden crust and a soft, honeycombed interior. Made with the finest French butter, folded with patience and precision.', prices: [{ label: 'Per Piece', val: '₹220' }], emoji: '🥐', img: 'main/assets/croisssant.jpeg' },
-    { id: 'vi2', cat: 'viennoiserie', catLabel: 'Viennoiserie', name: 'Pain au Chocolat', desc: 'Delicate, buttery layers wrapped around rich dark chocolate batons. Crisp on the outside, tender within — a perfectly balanced classic French indulgence.', prices: [{ label: 'Per Piece', val: '₹245' }], emoji: '🍫', img: 'main/assets/pain-au-chocolate.jpeg' },
+    { id: 'vi2', cat: 'viennoiserie', catLabel: 'Viennoiserie', name: 'Pain au Chocolat', desc: 'Delicate, buttery layers wrapped around rich dark chocolate batons. Crisp on the outside, tender within — a perfectly balanced classic French indulgence.', prices: [{ label: 'Per Piece', val: '₹245' }], emoji: '🍫', img: 'main/assets/Pain-au-Chocolat.jpeg' },
     { id: 'vi3', cat: 'viennoiserie', catLabel: 'Viennoiserie', name: 'Cinnamon Roll', desc: 'Soft, buttery swirls layered with warm cinnamon sugar, baked until golden and finished with a delicate glaze. Cosy, fragrant, and deeply comforting.', prices: [{ label: 'Per Piece', val: '₹200' }], emoji: '🌀', img: 'main/assets/Cinnamon-Roll.jpg' },
     { id: 'vi4', cat: 'viennoiserie', catLabel: 'Viennoiserie', name: 'Maritozzo', desc: 'Soft, lightly sweetened brioche bun generously filled with airy whipped cream. Pillowy, delicate and irresistibly indulgent — a Roman breakfast classic.', prices: [{ label: 'Per Piece', val: '₹250' }], emoji: '🍰', img: 'main/assets/Maritozzo.jpeg' },
     { id: 'vi5', cat: 'viennoiserie', catLabel: 'Viennoiserie', name: 'Bagel', desc: 'Hand-rolled and gently boiled before baking for its signature satisfying chew. Dense, chewy, golden — the real thing.', prices: [{ label: 'Per Piece', val: '₹160' }], emoji: '🥯', img: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&q=80' },
@@ -329,6 +329,7 @@ renderFaqs();
 bindCursor();
 
 initReveal();
+
 
 
 
