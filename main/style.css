@@ -110,7 +110,7 @@ nav.scrolled {
     font-size: .68rem;
     letter-spacing: .2em;
     text-transform: uppercase;
-    color: rgba(236, 228, 216, .65);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     transition: color .3s
 }
@@ -1045,7 +1045,7 @@ nav.scrolled {
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
     font-size: .93rem;
-    color: rgba(236, 228, 216, .5);
+    color: rgb(255, 255, 255);
     line-height: 1.52
 }
 
@@ -1630,7 +1630,7 @@ footer {
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
     font-size: .92rem;
-    color: rgba(236, 228, 216, .38);
+    color: rgba(255, 255, 255);
     line-height: 1.72;
     max-width: 250px
 }
@@ -1688,7 +1688,7 @@ footer {
     font-size: .6rem;
     letter-spacing: .1em;
     text-transform: uppercase;
-    color: rgba(236, 228, 216, .16)
+    color: rgb(255, 255, 255)
 }
 
 /* ── BUTTONS ── */
@@ -1759,7 +1759,7 @@ footer {
 .fssai-badge{display:inline-flex;align-items:center;gap:18px;border:1px solid rgba(186,151,96,.18);padding:11px 20px}
 .fssai-logo-wrap{display:flex;flex-direction:column;gap:3px;padding-right:18px;border-right:1px solid rgba(186,151,96,.18)}
 .fssai-name{font-family:'Jost',sans-serif;font-weight:700;font-size:1rem;letter-spacing:.14em;color:#e8d8b0;line-height:1}
-.fssai-tagline{font-size:.5rem;letter-spacing:.05em;color:rgba(236,228,216,.3);line-height:1.4;max-width:170px;margin-top:2px}
+.fssai-tagline{font-size:.5rem;letter-spacing:.05em;color:rgb(255,255,255);line-height:1.4;max-width:170px;margin-top:2px}
 .fssai-lic{display:flex;flex-direction:column;gap:3px}
 .fssai-lic-label{font-size:.5rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(236,228,216,.3)}
 .fssai-lic-num{font-family:'Jost',sans-serif;font-size:.82rem;letter-spacing:.08em;color:var(--gold)}
