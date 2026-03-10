@@ -1186,12 +1186,12 @@ nav.scrolled {
 
 .ctc-icon {
     font-size: .95rem;
-    opacity: .42;
+    /* opacity: .42; */
     flex-shrink: 0
 }
 
 .ctc-lbl {
-    font-size: .52rem;
+    font-size: 0.9rem;
     letter-spacing: .2em;
     text-transform: uppercase;
     color: rgba(236, 228, 216, .28);
@@ -1200,7 +1200,7 @@ nav.scrolled {
 }
 
 .ctc-val {
-    font-size: .83rem;
+    font-size: 1rem;
     color: rgba(236, 228, 216, .7);
     display: block;
     word-break: break-word
@@ -1672,7 +1672,7 @@ footer {
 }
 
 .foot-ci a {
-    color: var(--gold);
+    color: white;
     text-decoration: none
 }
 
@@ -1683,7 +1683,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 6px
+    gap: 6px;
 }
 
 .copy {
@@ -1757,14 +1757,65 @@ footer {
 
 
 /* ── FSSAI ── */
-.foot-fssai{border-top:1px solid rgba(236,228,216,.07);padding:22px 0;margin:0}
-.fssai-badge{display:inline-flex;align-items:center;gap:18px;border:1px solid rgba(186,151,96,.18);padding:11px 20px}
-.fssai-logo-wrap{display:flex;flex-direction:column;gap:3px;padding-right:18px;border-right:1px solid rgba(186,151,96,.18)}
-.fssai-name{font-family:'Jost',sans-serif;font-weight:700;font-size:1rem;letter-spacing:.14em;color:#e8d8b0;line-height:1}
-.fssai-tagline{font-size:.5rem;letter-spacing:.05em;color:rgb(255,255,255);line-height:1.4;max-width:170px;margin-top:2px}
-.fssai-lic{display:flex;flex-direction:column;gap:3px}
-.fssai-lic-label{font-size:.5rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(236,228,216,.3)}
-.fssai-lic-num{font-family:'Jost',sans-serif;font-size:.82rem;letter-spacing:.08em;color:white;}
+.foot-fssai {
+    border-top: 1px solid rgba(236, 228, 216, .07);
+    padding: 22px 0;
+    margin: 0
+}
+
+.fssai-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+    border: 1px solid rgba(186, 151, 96, .18);
+    padding: 11px 20px
+}
+
+.fssai-logo-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding-right: 18px;
+    border-right: 1px solid rgba(186, 151, 96, .18)
+}
+
+.fssai-name {
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: .14em;
+    color: #e8d8b0;
+    line-height: 1
+}
+
+.fssai-tagline {
+    font-size: .5rem;
+    letter-spacing: .05em;
+    color: rgb(255, 255, 255);
+    line-height: 1.4;
+    max-width: 170px;
+    margin-top: 2px
+}
+
+.fssai-lic {
+    display: flex;
+    flex-direction: column;
+    gap: 3px
+}
+
+.fssai-lic-label {
+    font-size: .5rem;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: rgba(236, 228, 216, .3)
+}
+
+.fssai-lic-num {
+    font-family: 'Jost', sans-serif;
+    font-size: .82rem;
+    letter-spacing: .08em;
+    color: white;
+}
 
 
 /* ── ANIMATIONS ── */
@@ -2262,11 +2313,3 @@ footer {
     }
 
 }
-
-
-
-
-
-
-
-
