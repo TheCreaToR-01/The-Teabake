@@ -2079,6 +2079,7 @@ footer {
 
     .hero-right {
         /* display: none */
+        padding: 120px 48px 80px 120px;
     }
 
     .hero-left {
@@ -2259,6 +2260,7 @@ footer {
     }
 
 }
+
 
 
 
