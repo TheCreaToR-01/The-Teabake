@@ -2078,7 +2078,7 @@ footer {
     }
 
     .hero-right {
-        display: none
+        /* display: none */
     }
 
     .hero-left {
@@ -2259,6 +2259,7 @@ footer {
     }
 
 }
+
 
 
 
