@@ -366,7 +366,7 @@ nav.scrolled {
 }
 
 .hero-badge {
-    position: absolute;
+    position: none;
     bottom: -14px;
     right: -14px;
     width: 88px;
