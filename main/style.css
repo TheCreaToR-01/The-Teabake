@@ -1295,7 +1295,8 @@ nav.scrolled {
     font-size: .62rem;
     letter-spacing: .1em;
     text-transform: uppercase;
-    color: var(--muted)
+    color: var(--muted);
+    display: none;
 }
 
 
