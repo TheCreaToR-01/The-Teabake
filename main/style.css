@@ -2084,7 +2084,7 @@ footer {
     }
 
     .hero-left {
-        padding: clamp(100px, 16vw, 140px) var(--pad) 60px
+        padding: clamp(150px, 16vw, 140px) var(--pad) 60px;
     }
 
     .scroll-hint {
