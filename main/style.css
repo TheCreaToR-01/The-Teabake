@@ -1653,7 +1653,7 @@ footer {
 
 .foot-links a {
     font-size: .8rem;
-    color: rgba(236, 228, 216, .38);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     transition: color .3s
 }
