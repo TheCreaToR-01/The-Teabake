@@ -1094,7 +1094,7 @@ nav.scrolled {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: .65
+    /* opacity: .65; */
 }
 
 .founder-pic::after {
