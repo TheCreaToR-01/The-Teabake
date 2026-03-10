@@ -350,8 +350,9 @@ nav.scrolled {
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
     font-size: .98rem;
-    color: rgba(236, 228, 216, .62);
-    line-height: 1.5
+    color: rgb(255 255 255);
+    line-height: 1.5;
+    text-align: center;
 }
 
 .hero-vis::before {
