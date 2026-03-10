@@ -1665,7 +1665,7 @@ footer {
 
 .foot-ci {
     font-size: .78rem;
-    color: rgba(236, 228, 216, .38);
+    color: rgb(255, 255, 255);
     margin-bottom: 7px;
     line-height: 1.55
 }
@@ -1763,7 +1763,7 @@ footer {
 .fssai-tagline{font-size:.5rem;letter-spacing:.05em;color:rgb(255,255,255);line-height:1.4;max-width:170px;margin-top:2px}
 .fssai-lic{display:flex;flex-direction:column;gap:3px}
 .fssai-lic-label{font-size:.5rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(236,228,216,.3)}
-.fssai-lic-num{font-family:'Jost',sans-serif;font-size:.82rem;letter-spacing:.08em;color:var(--gold)}
+.fssai-lic-num{font-family:'Jost',sans-serif;font-size:.82rem;letter-spacing:.08em;color:white;}
 
 
 /* ── ANIMATIONS ── */
