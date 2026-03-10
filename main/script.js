@@ -224,7 +224,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal()
 
 // ── WHATSAPP ──
 function openWA(txt) {
-    const msg = encodeURIComponent(`Hi The Tea Bake! ${txt}. Please let me know about availability. Thank you! 🙏`);
+    const msg = encodeURIComponent(`Hi ${txt}!. Please let me know about availability. Thank you! 🙏`);
     window.open(`https://wa.me/${WA}?text=${msg}`, '_blank');
 }
 
@@ -329,6 +329,7 @@ renderFaqs();
 bindCursor();
 
 initReveal();
+
 
 
 
