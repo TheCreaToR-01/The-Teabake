@@ -254,7 +254,7 @@ nav.scrolled {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: clamp(110px, 14vw, 160px) 48px 80px var(--pad);
+    padding: clamp(140px, 14vw, 160px) 48px 80px var(--pad);
     position: relative;
     z-index: 2
 }
@@ -2080,7 +2080,7 @@ footer {
 
     .hero-right {
         /* display: none */
-        padding: 120px 48px 80px 120px;
+        padding: 30px 30px 30px 30px;
     }
 
     .hero-left {
