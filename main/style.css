@@ -1083,11 +1083,11 @@ nav.scrolled {
 }
 
 .founder-pic {
-    width: 130px;
-    height: 164px;
-    background: linear-gradient(145deg, #2a1e14, #0a6d66);
+    width: 250px;
+    height: 320px;
+    /* background: linear-gradient(145deg, #2a1e14, #0a6d66); */
     overflow: hidden;
-    position: relative
+    position: relative;
 }
 
 .founder-pic img {
