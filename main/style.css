@@ -1519,7 +1519,7 @@ nav.scrolled {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    margin-bottom: 36px
+    margin-bottom: 36px;
 }
 
 .ofeat {
