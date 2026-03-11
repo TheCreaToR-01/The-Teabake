@@ -1129,7 +1129,7 @@ nav.scrolled {
     font-size: .55rem;
     letter-spacing: .17em;
     text-transform: uppercase;
-    color: rgba(236, 228, 216, .26);
+    color: rgb(255, 255, 255);
     text-align: center
 }
 
