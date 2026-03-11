@@ -338,18 +338,3 @@ renderFaqs();
 bindCursor();
 
 initReveal();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
