@@ -53,9 +53,9 @@ const PRODUCTS = [
     { id: 'sc6', cat: 'founder-favourites', catLabel: 'Signature Cakes', name: 'Sticky Toffee Date Cake', desc: 'A deeply indulgent British classic — moist date sponge drenched in warm toffee sauce and crowned with a generous pour of fresh cream or vanilla ice cream.', prices: [{ label: 'Serves 6', val: '₹1,799' }, { label: 'Serves 10–12', val: '₹2,999' }], emoji: '🍯', img: 'main/assets/Sticky-Toffee.jpeg' },
     { id: 'sc7', cat: 'founder-favourites', catLabel: 'Signature Cakes', name: 'Caramelised Nut Cake', desc: 'Layers of buttery sponge with a crown of beautifully caramelised mixed nuts — almonds, cashews, pecans and walnuts — in a rich toffee glaze. Spectacular and indulgent.', prices: [{ label: 'Serves 6', val: '₹1,799' }, { label: 'Serves 10–12', val: '₹2,999' }], emoji: '🥜', img: 'main/assets/Caramelised-Nut_Cake.jpeg' },
     { id: 'sc8', cat: 'founder-favourites', catLabel: 'Signature Cakes', name: 'Forêt Noire', desc: 'The iconic Black Forest — layers of dark chocolate sponge, Kirsch-soaked cherries, and billowing Chantilly cream. A classic that earns its enduring reputation.', prices: [{ label: 'Serves 6', val: '₹1,599' }, { label: 'Serves 10–12', val: '₹2,599' }], emoji: '🍒', img: 'main/assets/Forest-Noire.jpeg' },
-    { id: 'sc9', cat: 'founder-favourites', catLabel: 'Signature Cakes', name: 'Classic Vanilla Bean Cake', desc: 'Pure, unadulterated vanilla — a real vanilla bean sponge with vanilla Chantilly cream. Effortlessly elegant and endlessly pleasing. The one cake everyone comes back to.', prices: [{ label: 'Serves 6', val: '₹1,499' }, { label: 'Serves 10–12', val: '₹2,499' }], emoji: '🍦', img: 'main/assets/Vanilla-Bean.jpg' },
+    { id: 'sc9', cat: 'founder-favourites', catLabel: 'Signature Cakes', name: 'Classic Vanilla Bean Cake', desc: 'Pure, unadulterated vanilla — a real vanilla bean sponge with vanilla Chantilly cream. Effortlessly elegant and endlessly pleasing. The one cake everyone comes back to.', prices: [{ label: 'Serves 6', val: '₹1,499' }, { label: 'Serves 10–12', val: '₹2,499' }], emoji: '🍦', img: 'main/assets/Vanilla-Bean.jpeg' },
     { id: 'sc10', cat: 'founder-favourites', catLabel: 'Signature Cakes', name: 'Trifle', desc: 'Layers of soft sponge, fresh fruit, silky custard and luscious whipped cream. Delicately assembled for a dessert that is vibrant and creamy. Perfect for sharing.', prices: [{ label: 'Per Piece', val: '₹350' }, { label: 'Serves 6', val: '₹1,800' }, { label: 'Serves 10–12', val: '₹3,000' }], emoji: '🍮', img: 'main/assets/Triffle.jpeg' },
-    { id: 'sc11', cat: 'founder-favourites', catLabel: 'Signature Cakes', name: 'Tiramisu', desc: 'Home-baked sponge soaked in espresso, layered with rich mascarpone cream, dusted with finest cocoa powder. The Italian classic in a generous, shareable tub.', prices: [{ label: 'Serves 1', val: '₹350' }, { label: 'Serves 6', val: '₹1,800' }, { label: 'Serves 10–12', val: '₹3,000' }], emoji: '☕', img: 'main/assets/Tiramisu.jpeg' },
+    { id: 'sc11', cat: 'founder-favourites', catLabel: 'Signature Cakes', name: 'Tiramisu', desc: 'Home-baked sponge soaked in espresso, layered with rich mascarpone cream, dusted with finest cocoa powder. The Italian classic in a generous, shareable tub.', prices: [{ label: 'Per Piece', val: '₹350' }, { label: 'Serves 6', val: '₹1,800' }, { label: 'Serves 10–12', val: '₹3,000' }], emoji: '☕', img: 'main/assets/Tiramisu.jpeg' },
     { id: 'sc12', cat: 'founder-favourites', catLabel: 'Signature Cakes', name: 'Tres Leches', desc: 'Light vanilla sponge soaked in a blend of three milks, finished with a cloud of whipped cream, pistachios and rose petals. Moist, delicate and beautifully indulgent — to share.', prices: [{ label: 'Per Piece', val: '₹350' }, { label: 'Serves 6', val: '₹1,800' }, { label: 'Serves 10–12', val: '₹3,000' }], emoji: '🌹', img: 'main/assets/Tres-leches.jpeg' },
 ];
 const TESTIMONIALS = [
@@ -217,7 +217,7 @@ function openModal(id) {
     const ph = document.getElementById('modalPh');
     img.src = p.img; img.style.display = 'block'; ph.style.display = 'none';
     img.onerror = () => { img.style.display = 'none'; ph.style.display = 'flex' };
-    const msg = encodeURIComponent(`Hi Tea Bake! I'd like to order. Please let me know how to proceed. Thank you! 🙏`);
+    const msg = encodeURIComponent(`Hi Tea Bake! I'd like to order. Please let me know how to proceed. Thank you!`);
     document.getElementById('modalWA').href = `https://wa.me/${WA}?text=${msg}`;
     document.getElementById('modalOverlay').classList.add('open');
     document.body.style.overflow = 'hidden';
@@ -233,7 +233,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal()
 
 // ── WHATSAPP ──
 function openWA(txt) {
-    const msg = encodeURIComponent(`Hi Tea Bake! I'd like to order. Please let me know how to proceed. Thank you! 🙏`);
+    const msg = encodeURIComponent(`Hi Tea Bake! I'd like to order. Please let me know how to proceed. Thank you!`);
     window.open(`https://wa.me/${WA}?text=${msg}`, '_blank');
 }
 
