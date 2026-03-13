@@ -7,7 +7,7 @@ const PRODUCTS = [
     { id: 'tc4', cat: 'tea-cakes', catLabel: 'Home Style Tea Cakes', name: 'Vanilla Walnut', desc: 'A gentle, aromatic vanilla tea cake studded with toasted walnuts. Soft, fragrant, and unfailingly comforting — the kind of cake that feels like home.', prices: [{ label: '½ Kg', val: '₹1,199' }, { label: '1 Kg', val: '₹1,999' }], emoji: '🍦', img: 'main/assets/Vanilla-Walnut.jpeg', type: "main/assets/vegan.png" },
     { id: 'tc5', cat: 'tea-cakes', catLabel: 'Home Style Tea Cakes', name: 'Citrus Cake', desc: 'Bright, zesty, and beautifully fragrant — a sunshine-yellow loaf bursting with orange and lemon. Light-crumbed and refreshing, it pairs perfectly with a pot of tea.', prices: [{ label: '½ Kg', val: '₹1,199' }, { label: '1 Kg', val: '₹1,999' }], emoji: '🍋', img: 'main/assets/Citrus-Cake.jpeg', type: "main/assets/vegan.png" },
     { id: 'tc6', cat: 'tea-cakes', catLabel: 'Home Style Tea Cakes', name: 'Dark Chocolate Valencia', desc: 'Rich dark chocolate meets the bright fragrance of Valencia orange in this deeply indulgent loaf. Fudgy, intense, and just slightly bittersweet — a grown-up chocolate cake.', prices: [{ label: '½ Kg', val: '₹1,199' }, { label: '1 Kg', val: '₹1,999' }], emoji: '🍫', img: 'main/assets/Dark-Chocolate-Valencia.jpg', type: "main/assets/vegan.png", tag: 'Bestseller' },
-    { id: 'tc7', cat: 'tea-cakes', catLabel: 'Home Style Tea Cakes', name: 'Apple Cinnamon Crumble', desc: 'Tender spiced apple pieces folded into a cinnamon-kissed batter, finished with a buttery crumble topping. Warm, cosy, and deeply nostalgic.', prices: [{ label: '½ Kg', val: '₹1,199' }, { label: '1 Kg', val: '₹1,999' }], emoji: '🍎', img: 'main/assets/Apple crumble.JPG', type: "main/assets/vegan.png"},
+    { id: 'tc7', cat: 'tea-cakes', catLabel: 'Home Style Tea Cakes', name: 'Apple Cinnamon Crumble', desc: 'Tender spiced apple pieces folded into a cinnamon-kissed batter, finished with a buttery crumble topping. Warm, cosy, and deeply nostalgic.', prices: [{ label: '½ Kg', val: '₹1,199' }, { label: '1 Kg', val: '₹1,999' }], emoji: '🍎', img: 'main/assets/Apple crumble.JPG', type: "main/assets/vegan.png" },
     { id: 'tc8', cat: 'tea-cakes', catLabel: 'Home Style Tea Cakes', name: 'Lemon Ricotta Almond', desc: 'Made with almond flour for a tender crumb from ricotta and a brighty citrusy finish. This cake is perfect on its own simple, elegant and wholesome.', prices: [{ label: '½ Kg', val: '₹1,599' }, { label: '1 Kg', val: '₹2,899' }], emoji: '🍋', img: 'main/assets/Lemon-Ricotta.jpeg', type: "main/assets/veg.png" },
     { id: 'tc9', cat: 'tea-cakes', catLabel: 'Home Style Tea Cakes', name: 'Carrot Walnut Cake', desc: 'Spiced carrot cake with warm cinnamon and hints of nutmeg, shredded carrots. Finished with a smooth cream cheese frosting and walnuts.', prices: [{ label: '½ Kg', val: '₹1,399' }, { label: '1 Kg', val: '₹2,799' }], emoji: '🥕', img: 'main/assets/Carrot-Cake.jpeg', type: "main/assets/vegan.png" },
     { id: 'tc10', cat: 'tea-cakes', catLabel: 'Home Style Tea Cakes', name: 'Christmas Plum Cake', desc: "Our signature rich cake packed with dried fruits soaked and matured in 'Old Monk' for depth of flavor, walnuts, almonds and a touch of warm spices. Slow baked to achieve a moist and tender crumb.", prices: [{ label: '½ Kg', val: '₹1,599' }, { label: '1 Kg', val: '₹2,999' }], emoji: '🎄', img: 'main/assets/Plum-Cake.jpg', type: "main/assets/vegan.png" },
@@ -41,7 +41,7 @@ const PRODUCTS = [
     // TARTS & MOUSSE - House Classics
     { id: 'tm1', cat: 'house-classics', catLabel: 'Tarts, Tub Cakes & Mousse', name: 'Lemon Tart', desc: 'Crisp buttery tart shell filled with silky lemon custard. Bright, zesty, balanced with a smooth mascarpone cream. A study in perfect contrasts.', prices: [{ label: 'Per Piece', val: '₹299' }], emoji: '🍋', img: 'main/assets/Lemon-Tart.jpeg', type: "main/assets/veg.png" },
     { id: 'tm2', cat: 'house-classics', catLabel: 'Tarts, Tub Cakes & Mousse', name: 'Fresh Fruit Tart', desc: 'Smooth vanilla custard crowned with an elegant selection of seasonal fresh fruits. Colourful, delicate, and as beautiful as it is delicious.', prices: [{ label: 'Per Piece', val: '₹299' }], emoji: '🍓', img: 'main/assets/Fresh-Fruit-Tart.jpeg', type: "main/assets/veg.png" },
-    { id: 'tm3', cat: 'house-classics', catLabel: 'Tarts, Tub Cakes & Mousse', name: 'Banoffee Pie', desc: 'Buttery biscuit base layered with rich caramel, fresh banana and light whipped cream. A British classic that never fails to delight.', prices: [{ label: 'Per Piece', val: '₹299' }], emoji: '🍌', img: 'main/assets/Banoffee.jpeg' , type: "main/assets/veg.png"},
+    { id: 'tm3', cat: 'house-classics', catLabel: 'Tarts, Tub Cakes & Mousse', name: 'Banoffee Pie', desc: 'Buttery biscuit base layered with rich caramel, fresh banana and light whipped cream. A British classic that never fails to delight.', prices: [{ label: 'Per Piece', val: '₹299' }], emoji: '🍌', img: 'main/assets/Banoffee.jpeg', type: "main/assets/veg.png" },
     { id: 'tm4', cat: 'house-classics', catLabel: 'Tarts, Tub Cakes & Mousse', name: 'Belgian Chocolate Mousse', desc: 'Silky, airy mousse crafted with fine Belgian chocolate with a dollop of rich French cream. Pure, unapologetic chocolate indulgence.', prices: [{ label: 'Per Piece', val: '₹299' }], emoji: '🍫', img: 'main/assets/Belgian-Chocolate-Mousse.jpeg', type: "main/assets/veg.png", tag: 'Bestseller' },
 
     // SIGNATURE CAKES - chef's Favourites
@@ -187,7 +187,7 @@ function renderProducts(filter) {
         </div>
         <div class="pcard-body">
             <p class="pcard-cat">${p.catLabel}</p>
-            <h3 class="pcard-name">${p.name}<img class="pcard-type" src="${p.type}" alt="dietary-type"></h3>
+            <h3 class="pcard-name">${p.name}</h3>
             <span class="pcard-tag">${p.tag}</span>
             <p class="pcard-desc">${p.desc}</p>
             <div class="pcard-foot">
@@ -211,7 +211,7 @@ function openModal(id) {
     document.getElementById('modalCat').textContent = p.catLabel;
     document.getElementById('modalName').textContent = p.name;
     document.getElementById('modalDesc').textContent = p.desc;
-    // document.getElementById('modalType').src = p.type;
+    document.getElementById('modalType').src = p.type;
     document.getElementById('modalEmoji').textContent = p.emoji;
     document.getElementById('modalPrices').innerHTML = p.prices.map(pr => `
     <div><span class="mprice-label">${pr.label}</span><span class="mprice-val">${pr.val}</span></div>`).join('');
