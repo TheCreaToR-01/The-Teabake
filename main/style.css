@@ -386,7 +386,7 @@ nav.scrolled {
     font-family: 'DM Serif Display', serif;
     font-size: 1.4rem;
     color: var(--ink);
-    line-height: 1
+    line-height: 1;
 }
 
 .hero-badge small {
