@@ -188,9 +188,7 @@ function renderProducts(filter) {
         <div class="pcard-body">
             <p class="pcard-cat">${p.catLabel}</p>
             <h3 class="pcard-name">${p.name}<img class="pcard-type" src="${p.type}" alt="dietary-type"></h3>
-            if (p.tag) {
-                <span class="pcard-tag">${p.tag}</span>
-            }
+            <span class="pcard-tag">${p.tag}</span>
             <p class="pcard-desc">${p.desc}</p>
             <div class="pcard-foot">
                 <span class="pcard-price">${p.prices[0].val}<span style="font-family:'Jost',sans-serif;font-size:.6rem;font-weight:300;color:var(--muted);margin-left:3px">/ ${p.prices[0].label}</span></span>
@@ -213,7 +211,7 @@ function openModal(id) {
     document.getElementById('modalCat').textContent = p.catLabel;
     document.getElementById('modalName').textContent = p.name;
     document.getElementById('modalDesc').textContent = p.desc;
-    document.getElementById('modalType').src = p.type;
+    // document.getElementById('modalType').src = p.type;
     document.getElementById('modalEmoji').textContent = p.emoji;
     document.getElementById('modalPrices').innerHTML = p.prices.map(pr => `
     <div><span class="mprice-label">${pr.label}</span><span class="mprice-val">${pr.val}</span></div>`).join('');
