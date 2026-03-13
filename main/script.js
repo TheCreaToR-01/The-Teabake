@@ -188,7 +188,7 @@ function renderProducts(filter) {
         <div class="pcard-body">
             <p class="pcard-cat">${p.catLabel}</p>
             <h3 class="pcard-name">${p.name}</h3>
-            <span class="pcard-tag">${p.tag}</span>
+            ${p.tag ? `<span class="pcard-tag">${p.tag}</span>` : ''}
             <p class="pcard-desc">${p.desc}</p>
             <div class="pcard-foot">
                 <span class="pcard-price">${p.prices[0].val}<span style="font-family:'Jost',sans-serif;font-size:.6rem;font-weight:300;color:var(--muted);margin-left:3px">/ ${p.prices[0].label}</span></span>
