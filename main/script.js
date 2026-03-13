@@ -187,7 +187,7 @@ function renderProducts(filter) {
         </div>
         <div class="pcard-body">
             <p class="pcard-cat">${p.catLabel}</p>
-            <h3 class="pcard-name">${p.name}</h3>
+            <h3 class="pcard-name">${p.name}<img src="${p.type}" alt="dietary-type"></h3>
             <span class="pcard-type"><img src="${p.type}" alt="dietary-type"></span>
             <p class="pcard-desc">${p.desc}</p>
             <div class="pcard-foot">
