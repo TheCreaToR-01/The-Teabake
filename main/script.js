@@ -210,6 +210,7 @@ function openModal(id) {
     document.getElementById('modalCat').textContent = p.catLabel;
     document.getElementById('modalName').textContent = p.name;
     document.getElementById('modalDesc').textContent = p.desc;
+    document.getElementById('modalType').src = p.type;
     document.getElementById('modalEmoji').textContent = p.emoji;
     document.getElementById('modalPrices').innerHTML = p.prices.map(pr => `
     <div><span class="mprice-label">${pr.label}</span><span class="mprice-val">${pr.val}</span></div>`).join('');
