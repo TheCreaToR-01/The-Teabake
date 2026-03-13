@@ -263,7 +263,7 @@ nav.scrolled {
     font-size: .62rem;
     letter-spacing: .38em;
     text-transform: uppercase;
-    color: var(--gold);
+    color: white;
     margin-bottom: 20px;
     opacity: 0;
     animation: fadeUp .7s ease .4s forwards
