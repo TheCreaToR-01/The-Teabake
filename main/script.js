@@ -253,13 +253,12 @@ function renderFaqs() {
     const list = document.getElementById('faqList');
     if (!list || !FAQS.length) return;
     list.innerHTML = FAQS.map((item, idx) => {
-        // const num = (idx + 1).toString().padStart(2, '0');
+        const num = (idx + 1).toString().padStart(2, '0');
         const body = item.a.map(p => `<p>${p}</p>`).join('');
         const openClass = idx === 0 ? ' open' : '';
         return `
         <article class="faq-item${openClass}">
             <button class="faq-btn" type="button">
-                <span class="faq-num">${num}</span>
                 <span class="faq-question">${item.q}</span>
                 <span class="faq-icon">+</span>
             </button>
