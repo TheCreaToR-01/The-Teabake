@@ -923,7 +923,7 @@ nav.scrolled {
 }
 
 .creds-strip {
-    background: var(--gold);
+    background: white;
     display: flex;
     overflow-x: auto;
     scrollbar-width: none;
@@ -953,7 +953,7 @@ nav.scrolled {
 }
 
 .cred-lbl {
-    font-size: .54rem;
+    font-size: .6rem;
     letter-spacing: .2em;
     text-transform: uppercase;
     color: rgba(26, 18, 8, .5);
@@ -1054,7 +1054,7 @@ nav.scrolled {
 .philo-n {
     font-family: 'DM Serif Display', serif;
     font-size: 1.7rem;
-    color: rgba(186, 151, 96, .18);
+    color: rgb(186, 151, 96);
     line-height: 1;
     margin-bottom: 5px
 }
@@ -1062,7 +1062,7 @@ nav.scrolled {
 .philo-t {
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
-    font-size: .93rem;
+    font-size: 1.1rem;
     color: rgb(255, 255, 255);
     line-height: 1.52
 }
