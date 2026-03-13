@@ -288,7 +288,7 @@ nav.scrolled {
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
     font-size: clamp(1rem, 1.4vw, 1.2rem);
-    color: rgba(236, 228, 216, .6);
+    color: rgb(255, 255, 255);
     line-height: 1.75;
     max-width: 360px;
     margin-bottom: 38px;
