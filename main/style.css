@@ -363,7 +363,7 @@ nav.scrolled {
     right: -18px;
     bottom: -18px;
     border: 1px solid rgba(186, 151, 96, .2);
-    z-index: -1
+    z-index: -1;
 }
 
 .hero-badge {
@@ -429,7 +429,7 @@ nav.scrolled {
     width: 100%;
     height: 100%;
     background: var(--cream);
-    animation: slideR 2s ease-in-out infinite
+    animation: slideR 2s ease-in-out infinite;
 }
 
 /* ── MARQUEE ── */
@@ -442,7 +442,7 @@ nav.scrolled {
 .marquee-track {
     display: flex;
     white-space: nowrap;
-    animation: marquee 20s linear infinite
+    animation: marquee 15s linear infinite;
 }
 
 .mitem {
