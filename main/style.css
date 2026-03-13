@@ -618,9 +618,9 @@ nav.scrolled {
     font-weight: 500;
 }
 
-.pcard-type{
-    width: 30px;
-    height: 30px;
+.pcard-type img{
+    width: 20px;
+    height: 20px;
 }
 
 .pcard-desc {
