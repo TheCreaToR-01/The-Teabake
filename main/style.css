@@ -442,7 +442,7 @@ nav.scrolled {
 .marquee-track {
     display: flex;
     white-space: nowrap;
-    animation: marquee 15s linear infinite;
+    animation: marquee 5s linear infinite;
 }
 
 .mitem {
