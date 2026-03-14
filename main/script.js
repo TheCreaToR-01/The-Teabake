@@ -220,7 +220,7 @@ function openModal(id) {
     const ph = document.getElementById('modalPh');
     img.src = p.img; img.style.display = 'block'; ph.style.display = 'none';
     img.onerror = () => { img.style.display = 'none'; ph.style.display = 'flex' };
-    const msg = encodeURIComponent(`Hi The Tea Bake! I'd like to order. Please let me know how to proceed. Thank you!`);
+    const msg = encodeURIComponent(`Hi! I'd like to order: *${p.name}*\n\nPrice: ${p.prices.map(x => x.label + ' - ' + x.val).join(', ')}\n\nPlease let me know availability. Thank you! 🙏`);
     document.getElementById('modalWA').href = `https://wa.me/${WA}?text=${msg}`;
     document.getElementById('modalOverlay').classList.add('open');
     document.body.style.overflow = 'hidden';
