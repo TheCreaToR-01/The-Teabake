@@ -911,7 +911,7 @@ nav.scrolled {
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
     font-size: clamp(1rem, 1.4vw, 1.25rem);
-    color: rgba(236, 228, 216, .62);
+    color: white;
     line-height: 1.85;
     border-left: 2px solid rgba(186, 151, 96, .38);
     padding-left: 22px
@@ -2251,8 +2251,8 @@ footer {
     }
 
     .founder-pic {
-        width: 90px;
-        height: 112px
+        width: 150px;
+        height: 200px;
     }
 
     .contact-strip {
