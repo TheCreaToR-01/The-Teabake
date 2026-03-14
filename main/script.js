@@ -251,6 +251,34 @@ function renderReviews() {
     </div>`).join('');
 }
 
+
+
+const track = document.getElementById('reviewsTrack');
+const nextBtn = document.getElementById('nextBtn');
+const prevBtn = document.getElementById('prevBtn');
+
+// Calculate how much to slide: (Card Width + Gap) * 2
+const scrollAmount = (290 + 18) * 2;
+
+nextBtn.addEventListener('click', () => {
+    track.scrollBy({
+        left: scrollAmount,
+        behavior: 'smooth'
+    });
+});
+
+prevBtn.addEventListener('click', () => {
+    track.scrollBy({
+        left: -scrollAmount,
+        behavior: 'smooth'
+    });
+});
+
+// Skeptical check: If user manually scrolls, the buttons still work fine.
+// This is much more robust than CSS animations which can't be "paused" and "resumed" easily at a specific spot.
+
+
+
 // ── FAQ ──
 function renderFaqs() {
     const list = document.getElementById('faqList');

@@ -1268,7 +1268,7 @@ nav.scrolled {
     display: flex;
     gap: 18px;
     animation: scrollR 44s linear infinite;
-    width: max-content
+    width: max-content;
 }
 
 .reviews-track:hover {
@@ -1314,6 +1314,91 @@ nav.scrolled {
     text-transform: uppercase;
     color: var(--muted);
     display: none;
+}
+
+
+
+/* ── UPDATED TESTIMONIALS ── */
+.testi-sec {
+    background: var(--cream);
+    padding: 80px 0;
+}
+
+.testi-head {
+    padding: 0 var(--pad) 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* Keeps arrows aligned with the text */
+}
+
+.testi-ctrls {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.ctrl-btn {
+    background: var(--white);
+    border: 1px solid var(--teal);
+    color: var(--teal);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1.2rem;
+}
+
+.ctrl-btn:hover {
+    background: var(--teal);
+    color: var(--white);
+}
+
+.reviews-wrap {
+    overflow: hidden;
+    /* We hide the scrollbar but keep the function */
+    position: relative;
+    padding: 0 var(--pad);
+    /* Gives breathing room on the sides */
+}
+
+/* Fades remain same, but check z-index */
+.reviews-wrap::before,
+.reviews-wrap::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    /* Slightly wider for better fade */
+    z-index: 5;
+    pointer-events: none;
+}
+
+.reviews-track {
+    display: flex;
+    gap: 18px;
+    /* REMOVED: animation: scrollR 44s linear infinite; */
+    width: auto;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    /* This is the magic for smooth sliding */
+    scrollbar-width: none;
+    /* Hides scrollbar in Firefox */
+}
+
+.reviews-track::-webkit-scrollbar {
+    display: none;
+    /* Hides scrollbar in Chrome/Safari */
+}
+
+.rcard {
+    background: var(--white);
+    padding: 26px;
+    width: 290px;
+    flex-shrink: 0;
+    border-bottom: 3px solid var(--teal);
 }
 
 
