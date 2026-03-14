@@ -1832,7 +1832,8 @@ footer {
     font-family: 'Jost', sans-serif;
     font-size: .82rem;
     letter-spacing: .08em;
-    color: white;
+    color: inherit;
+    text-decoration: none;
 }
 
 
