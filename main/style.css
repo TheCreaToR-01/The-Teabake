@@ -1228,97 +1228,8 @@ nav.scrolled {
     text-decoration: none
 }
 
+
 /* ── TESTIMONIALS ── */
-/* .testi-sec {
-    background: var(--cream);
-    padding: 80px 0
-}
-
-.testi-head {
-    padding: 0 var(--pad) 44px
-}
-
-.reviews-wrap {
-    overflow: hidden;
-    position: relative
-}
-
-.reviews-wrap::before,
-.reviews-wrap::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 56px;
-    z-index: 2;
-    pointer-events: none
-}
-
-.reviews-wrap::before {
-    left: 0;
-    background: linear-gradient(to right, var(--cream), transparent)
-}
-
-.reviews-wrap::after {
-    right: 0;
-    background: linear-gradient(to left, var(--cream), transparent)
-}
-
-.reviews-track {
-    display: flex;
-    gap: 18px;
-    animation: scrollR 44s linear infinite;
-    width: max-content;
-}
-
-.reviews-track:hover {
-    animation-play-state: paused
-} */
-
-.rcard {
-    background: var(--white);
-    padding: 26px;
-    width: 290px;
-    flex-shrink: 0;
-    border-bottom: 3px solid var(--teal)
-}
-
-.rcard-stars {
-    color: var(--gold);
-    font-size: .9rem;
-    margin-bottom: 10px;
-    letter-spacing: 2px
-}
-
-.rcard-text {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    font-size: .98rem;
-    color: var(--ink);
-    line-height: 1.68;
-    margin-bottom: 16px
-}
-
-.rcard-name {
-    font-family: 'Jost', sans-serif;
-    font-size: .78rem;
-    font-weight: 500;
-    color: var(--teal);
-    display: block;
-    margin-bottom: 2px
-}
-
-.rcard-loc {
-    font-size: .62rem;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    color: var(--muted);
-    display: none;
-}
-
-
-
-/* ── UPDATED TESTIMONIALS ── */
 .testi-sec {
     background: var(--cream);
     padding: 80px 0;
@@ -1399,6 +1310,39 @@ nav.scrolled {
     width: 290px;
     flex-shrink: 0;
     border-bottom: 3px solid var(--teal);
+}
+
+.rcard-stars {
+    color: var(--gold);
+    font-size: .9rem;
+    margin-bottom: 10px;
+    letter-spacing: 2px
+}
+
+.rcard-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: .98rem;
+    color: var(--ink);
+    line-height: 1.68;
+    margin-bottom: 16px
+}
+
+.rcard-name {
+    font-family: 'Jost', sans-serif;
+    font-size: .78rem;
+    font-weight: 500;
+    color: var(--teal);
+    display: block;
+    margin-bottom: 2px
+}
+
+.rcard-loc {
+    font-size: .62rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    display: none;
 }
 
 
