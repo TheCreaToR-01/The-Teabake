@@ -1228,8 +1228,8 @@ nav.scrolled {
     text-decoration: none
 }
 
-/* ── TESTIMONIALS ──
-.testi-sec {
+/* ── TESTIMONIALS ── */
+/* .testi-sec {
     background: var(--cream);
     padding: 80px 0
 }
@@ -1273,7 +1273,7 @@ nav.scrolled {
 
 .reviews-track:hover {
     animation-play-state: paused
-}
+} */
 
 .rcard {
     background: var(--white);
@@ -1314,7 +1314,7 @@ nav.scrolled {
     text-transform: uppercase;
     color: var(--muted);
     display: none;
-} */
+}
 
 
 
