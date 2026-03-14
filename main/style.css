@@ -1228,7 +1228,7 @@ nav.scrolled {
     text-decoration: none
 }
 
-/* ── TESTIMONIALS ── */
+/* ── TESTIMONIALS ──
 .testi-sec {
     background: var(--cream);
     padding: 80px 0
@@ -1314,7 +1314,7 @@ nav.scrolled {
     text-transform: uppercase;
     color: var(--muted);
     display: none;
-}
+} */
 
 
 
