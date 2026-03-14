@@ -1239,7 +1239,9 @@ nav.scrolled {
     padding: 0 var(--pad) 44px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    /* align-items: flex-end; */
+    flex-direction: column;
+    gap: 20px;
     /* Keeps arrows aligned with the text */
 }
 
