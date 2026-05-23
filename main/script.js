@@ -1,4 +1,195 @@
 const WA = '917290892771';
+
+// ── CART FUNCTIONALITY ──
+class Cart {
+    constructor() {
+        this.items = this.loadFromStorage();
+    }
+
+    loadFromStorage() {
+        const saved = localStorage.getItem('teabakeCart');
+        return saved ? JSON.parse(saved) : [];
+    }
+
+    saveToStorage() {
+        localStorage.setItem('teabakeCart', JSON.stringify(this.items));
+    }
+
+    addItem(productId, productName, sizeLabel, sizePrice, quantity) {
+        const qty = parseInt(quantity);
+        const existingItem = this.items.find(item =>
+            item.productId === productId && item.sizeLabel === sizeLabel
+        );
+
+        if (existingItem) {
+            existingItem.quantity += qty;
+        } else {
+            this.items.push({
+                productId,
+                productName,
+                sizeLabel,
+                sizePrice,
+                quantity: qty,
+                id: Date.now() + Math.random() // Unique id for removal
+            });
+        }
+        this.saveToStorage();
+        this.updateCartUI();
+    }
+
+    removeItem(itemId) {
+        this.items = this.items.filter(item => item.id !== itemId);
+        this.saveToStorage();
+        this.updateCartUI();
+    }
+
+    clear() {
+        this.items = [];
+        this.saveToStorage();
+        this.updateCartUI();
+    }
+
+    getTotal() {
+        return this.items.reduce((sum, item) => {
+            const price = parseInt(item.sizePrice.replace(/₹|,/g, ''));
+            return sum + (price * item.quantity);
+        }, 0);
+    }
+
+    updateCartUI() {
+        const count = this.items.reduce((sum, item) => sum + item.quantity, 0);
+        const countEl = document.getElementById('cartCount');
+
+        if (count > 0) {
+            countEl.textContent = count;
+            countEl.style.display = 'block';
+        } else {
+            countEl.style.display = 'none';
+        }
+
+        this.renderCartItems();
+    }
+
+    renderCartItems() {
+        const cartItemsEl = document.getElementById('cartItems');
+        const checkoutBtn = document.getElementById('cartCheckoutBtn');
+        const clearBtn = document.getElementById('cartClearBtn');
+
+        if (this.items.length === 0) {
+            cartItemsEl.innerHTML = '<p class="cart-empty">Your cart is empty</p>';
+            checkoutBtn.disabled = true;
+            clearBtn.style.display = 'none';
+            document.getElementById('cartTotalPrice').textContent = '₹0';
+            return;
+        }
+
+        cartItemsEl.innerHTML = this.items.map(item => `
+            <div class="cart-item">
+                <div class="cart-item-info">
+                    <h4 class="cart-item-name">${item.productName}</h4>
+                    <p class="cart-item-size">${item.sizeLabel} - ${item.sizePrice}</p>
+                    <div class="cart-item-qty">
+                        <button class="cart-qty-btn" onclick="cart.updateQuantity(${item.id}, ${item.quantity - 1})">−</button>
+                        <span class="cart-qty-value">${item.quantity}</span>
+                        <button class="cart-qty-btn" onclick="cart.updateQuantity(${item.id}, ${item.quantity + 1})">+</button>
+                    </div>
+                </div>
+                <div class="cart-item-price">
+                    <p class="cart-item-total">₹${(parseInt(item.sizePrice.replace(/₹|,/g, '')) * item.quantity).toLocaleString('en-IN')}</p>
+                    <button class="cart-item-remove" onclick="cart.removeItem(${item.id})">Remove</button>
+                </div>
+            </div>
+        `).join('');
+
+        checkoutBtn.disabled = false;
+        clearBtn.style.display = 'block';
+        document.getElementById('cartTotalPrice').textContent = '₹' + this.getTotal().toLocaleString('en-IN');
+    }
+
+    updateQuantity(itemId, newQuantity) {
+        if (newQuantity <= 0) {
+            this.removeItem(itemId);
+            return;
+        }
+        const item = this.items.find(i => i.id === itemId);
+        if (item) {
+            item.quantity = newQuantity;
+            this.saveToStorage();
+            this.updateCartUI();
+        }
+    }
+}
+
+const cart = new Cart();
+
+// ── CART UI FUNCTIONS ──
+function openCart() {
+    document.getElementById('cartOverlay').classList.add('open');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeCart() {
+    document.getElementById('cartOverlay').classList.remove('open');
+    document.body.style.overflow = '';
+}
+
+function handleCartClick(e) {
+    if (e.target === document.getElementById('cartOverlay')) closeCart();
+}
+
+function clearCart() {
+    if (confirm('Are you sure you want to clear your cart?')) {
+        cart.clear();
+    }
+}
+
+function checkoutCart() {
+    if (cart.items.length === 0) {
+        alert('Your cart is empty');
+        return;
+    }
+
+    const cartSummary = cart.items.map(item =>
+        `${item.productName} (${item.sizeLabel} - ${item.sizePrice}) x ${item.quantity}`
+    ).join('\n');
+
+    const total = '₹' + cart.getTotal().toLocaleString('en-IN');
+
+    const message = `Hi! I'd like to place an order from The Tea Bake:\n\n${cartSummary}\n\nTotal: ${total}\n\nPlease confirm the order. Thank you!`;
+    const encodedMsg = encodeURIComponent(message);
+
+    window.open(`https://wa.me/${WA}?text=${encodedMsg}`, '_blank');
+}
+
+function addToCart() {
+    const sizeSelect = document.getElementById('modalSize');
+    const qtySelect = document.getElementById('modalQuantity');
+
+    if (!sizeSelect.value) {
+        alert('Please select a size');
+        return;
+    }
+
+    const productId = document.getElementById('modalOverlay').dataset.currentProductId;
+    const productName = document.getElementById('modalName').textContent;
+    const [sizeLabel, sizePrice] = sizeSelect.value.split('|');
+    const quantity = qtySelect.value;
+
+    cart.addItem(productId, productName, sizeLabel, sizePrice, quantity);
+
+    // Show success message
+    const btn = document.getElementById('addToCartBtn');
+    const originalText = btn.innerHTML;
+    btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Added!';
+    btn.style.background = 'var(--teal)';
+
+    setTimeout(() => {
+        btn.innerHTML = originalText;
+        btn.style.background = '';
+        closeModal();
+    }, 1500);
+}
+
 const PRODUCTS = [
     // HOME STYLE TEA CAKES
     { id: 'tc1', cat: 'tea-cakes', catLabel: 'Home Style Tea Cakes', name: 'Date & Fig Walnut', desc: 'A moist, rich and crunchy cake. Melange of Tender chopped dates, sundried figs and toasted walnuts. Wholesome and indulgent.', prices: [{ label: '½ Kg', val: '₹1,199' }, { label: '1 Kg', val: '₹1,999' }], emoji: '🍰', img: 'main/assets/Date and fig.JPG', type: "main/assets/veg.png", tag: 'Bestseller ⭐ 5' },
@@ -209,19 +400,38 @@ function filterCat(filter, btn) {
 function openModal(id) {
     const p = PRODUCTS.find(x => x.id === id);
     if (!p) return;
+
+    document.getElementById('modalOverlay').dataset.currentProductId = id;
     document.getElementById('modalCat').textContent = p.catLabel;
     document.getElementById('modalName').textContent = p.name;
     document.getElementById('modalDesc').textContent = p.desc;
     document.getElementById('modalType').src = p.type;
     document.getElementById('modalEmoji').textContent = p.emoji;
+
+    // Populate size select
+    const sizeSelect = document.getElementById('modalSize');
+    sizeSelect.innerHTML = '<option value="">Select a size</option>' +
+        p.prices.map(pr => `<option value="${pr.label}|${pr.val}">${pr.label} - ${pr.val}</option>`).join('');
+
+    // Populate quantity select if present
+    const qtySelect = document.getElementById('modalQuantity');
+    if (qtySelect) {
+        qtySelect.innerHTML = Array.from({ length: 10 }, (_, i) => `<option value="${i + 1}">${i + 1}</option>`).join('');
+    }
+
+    const waLink = document.getElementById('modalWA');
+    if (waLink) {
+        waLink.href = `https://wa.me/${WA}?text=${encodeURIComponent(`Hi! I'd like to order ${p.name} from The Tea Bake.`)}`;
+    }
+
     document.getElementById('modalPrices').innerHTML = p.prices.map(pr => `
     <div><span class="mprice-label">${pr.label}</span><span class="mprice-val">${pr.val}</span></div>`).join('');
+
     const img = document.getElementById('modalImg');
     const ph = document.getElementById('modalPh');
     img.src = p.img; img.style.display = 'block'; ph.style.display = 'none';
     img.onerror = () => { img.style.display = 'none'; ph.style.display = 'flex' };
-    const msg = encodeURIComponent(`Hi! I'd like to order: *${p.name}*\n\nPrice: ${p.prices.map(x => x.label + ' - ' + x.val).join(', ')}\n\nPlease let me know how to proceed. Thank you!`);
-    document.getElementById('modalWA').href = `https://wa.me/${WA}?text=${msg}`;
+
     document.getElementById('modalOverlay').classList.add('open');
     document.body.style.overflow = 'hidden';
 }
